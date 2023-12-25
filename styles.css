@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 50px;
+    text-align: left; /* 公告欄內容居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+
+
+
+.content {
+    flex: 3;
+    padding: 50px;
+    text-align: center; /* 公告欄內容居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulletin-board {
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* 可以添加其他樣式以讓公告欄在中央更好看 */
+    width: 50%; /* 限制公告欄寬度，可根據需要調整 */
+    margin: 0 auto; /* 水平置中 */
+}
+
+.bulletin-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bulletin-item:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.bulletin-item:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
